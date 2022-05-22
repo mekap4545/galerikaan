@@ -29,4 +29,4 @@ urlpatterns = [
     path('product/',views.product,name = "product"),
     path('store/', include('store.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
-  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOTP)
+  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
