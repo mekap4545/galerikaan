@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+
+
+      <div id="about"  class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-7">
+                  <div class="titlepage">
+                     <h2>Hakkımızda</h2>
+                     <span></span>
+                     <p>Firma kurulduğu ilk günden beri dürüstlük ve devamlılık üzerine satışlarını yapmış ve %100 ekspertiz garantisi vermiştir. her ihtiyaca uygun çeşit sunan 2. el otomobil stoğu ile müşterilerine huzurlu alışveriş imkanı sunmaktadır. </p>
+                     <a class="read_more">İletişim <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="about_img">
+                     <figure><img src="/static/images/logo3.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <div class="intro-banner-wrap">
+         <img src="{% static 'images/galeri.png' %}" class="img-fluid rounded">
+      </div>
+      <!-- end about -->
+     
+  
+      
+     {% endblock %}

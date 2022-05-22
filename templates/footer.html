@@ -1,0 +1,46 @@
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer border-top">
+	<div class="container">
+		<section class="footer-bottom border-top row">
+			<div class="col-md-2">
+				<p class="text-muted"> &copy 2022 Kaan Galeri</p>
+			</div>
+			<div class="col-md-8 text-md-center">
+				<span  class="px-2">kaangaleri@gmail.com</span>
+				<span  class="px-2">+90 534 837 0111</span>
+				<span  class="px-2">Festiva AVM SALİHLİ/MANİSA</span>
+			</div>
+			<div class="col-md-2 text-md-right text-muted">
+				<i class="fa fa-car"></i>
+				<i class="fa fa-motorcycle"></i>
+				<i class="fa fa-truck"></i>
+			</div>
+		</section>
+	</div><!-- //container -->
+</footer>
+<!-- ========================= FOOTER END // ========================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
+<script type="text/javascript">
+	(function () {
+		var options = {
+			whatsapp: "905348370111", // WhatsApp numarası
+			call_to_action: "Merhaba, nasıl yardımcı olabilirim?", // Görüntülenecek yazı
+			position: "left", // Sağ taraf için 'right' sol taraf için 'left'
+		};
+		var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+		s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+		var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+	})();
+</script>
+
+</body>
+</html>
