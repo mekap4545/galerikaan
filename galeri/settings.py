@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3y82m697aeaasy%g4m-ff$*w6&@g&7p4ey$(2%2+#8$7j5%olp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://mehmetkaanarbag.pythonanywhere.com/']
+ALLOWED_HOSTS = []
 
  
 
@@ -79,6 +79,16 @@ WSGI_APPLICATION = 'galeri.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+"""DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'kaangale_kaangale',
+        'USER': 'kaangale_kaangale',
+        'PASSWORD': 'artav2004',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -129,10 +139,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_ROOT = BASE_DIR / "media"
 
 
 # Default primary key field type
